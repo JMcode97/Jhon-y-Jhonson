@@ -1,9 +1,13 @@
-import "../styles/styles.scss"
+import { CssBaseline } from "@mui/material"
 import Home from "./pages/home"
 
 const App = () => {
   return (
-    <Home />
+    <>
+      <CssBaseline />
+      <Home />
+    </>
+
   )
 }
 
