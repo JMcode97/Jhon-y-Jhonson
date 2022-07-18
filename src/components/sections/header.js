@@ -2,9 +2,9 @@
 import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { ShoppingCartCheckout } from "@mui/icons-material";
+import { Link } from "react-router-dom"
 
-
-const ButtonAppBar = () => {
+const Header = () => {
 
     return (
       <Box sx={{ flexGrow: 1 }}>
@@ -12,10 +12,14 @@ const ButtonAppBar = () => {
           <Toolbar>
             <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
                 Jhon&Jhonson
-            </Typography>
-            <Button color="inherit">Inicio</Button>
-            <Button color="inherit">Iniciar Sesión</Button>
-            <IconButton color="inherit">
+            </Typography> 
+            <Button component={Link} to="/" color="inherit">
+                Inicio
+            </Button>
+            <Button component={Link} to="/login" color="inherit">
+                Iniciar Sesión
+            </Button>
+            <IconButton component={Link} to="/checkout" color="inherit">
                 <ShoppingCartCheckout /> 
             </IconButton>
           </Toolbar>
@@ -24,4 +28,4 @@ const ButtonAppBar = () => {
     );
   }
 
-export default ButtonAppBar
+export default Header

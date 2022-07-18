@@ -1,12 +1,12 @@
 import Header from "../sections/header"
 
-const Home = () => {
+const Checkout = () => {
     return (
         <>
         <Header />
-        <span>Home sirve</span>
+        <h1>CHECKOUT</h1>
         </>
     )
 }
 
-export default Home
+export default Checkout
