@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardActionArea, CardContent, CardMedia, Typography, Grid } from "@mui/material";
+import { Button, Card, CardActions, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 
 export default function HomeCard({ img, name, price }) {
 
@@ -13,10 +13,10 @@ export default function HomeCard({ img, name, price }) {
                 />
                 <CardContent sx={{ py: 0, height: "55px" }}>
                     <Typography gutterBottom variant="h6" m={0}>
-                        30 $
+                        Ropa
                     </Typography>
                     <Typography variant="subtitle1" color="text.secondary">
-                        Ropa
+                        30$
                     </Typography>
                 </CardContent>
             </CardActionArea>

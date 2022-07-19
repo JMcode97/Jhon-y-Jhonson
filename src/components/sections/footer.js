@@ -10,9 +10,9 @@ export default function Footer() {
     const Enlaces = { color: "#fefae0", textDecoration: "none", cursor: "pointer" }
 
     return (
-        <Box bgcolor={"#283618"} color="#fefae0" p={2} >
+        <Box sx={{ bgcolor: "#283618", color: "#fefae0", p: 2 }} >
             <Container sx={{ display: "flex", justifyContent: "space-between" }}>
-                <Box className="footer menu">
+                <Box className="footer menu" sx={{ left: 0, right: 0, textAlign: "center" }}>
                     <Box>
                         <Typography component={Link} to="/" sx={Enlaces}>Quienes somos</Typography>
                     </Box>
